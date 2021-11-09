@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+    margin: 70px 0 40px 240px;
+}
+
+.car_type {
+    min-height: 400px;
+    max-width: 285px;
+    padding: 40px;
+
+    h1{
+        margin: 30px 0;
+    }
+}
+
+.car_sedan {
+    background: rgb(214, 139, 0);
+    border-radius: 8px 0 0 8px;
+}
+
+.car_suv {
+    background: darkcyan;
+}
+
+.car_lux {
+    background: rgb(0, 92, 92);
+    border-radius: 0 8px 8px 0;
+}
+
+@media (min-width:370px) and (max-width: 380px) {
+    main {
+        flex-wrap: wrap;
+        margin: 80px 45px 80px 45px;
+    }
+    .car_sedan {
+        border-radius: 8px 8px 0 0 ;
+    }
+
+    .car_lux {
+        border-radius: 0 0 8px 8px;
+    }
+}
+
+

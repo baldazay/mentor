@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 70px 0 40px 240px;
+}
+
+.car_type {
+  min-height: 400px;
+  max-width: 285px;
+  padding: 40px;
+}
+
+.car_type h1 {
+  margin: 30px 0;
+}
+
+.car_sedan {
+  background: #d68b00;
+  border-radius: 8px 0 0 8px;
+}
+
+.car_suv {
+  background: darkcyan;
+}
+
+.car_lux {
+  background: #005c5c;
+  border-radius: 0 8px 8px 0;
+}
+
+@media (min-width: 370px) and (max-width: 380px) {
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 80px 45px 80px 45px;
+  }
+  .car_sedan {
+    border-radius: 8px 8px 0 0;
+  }
+  .car_lux {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+button {
+  margin: 80px 0 25px 0;
+  height: 40px;
+  width: 120px;
+  border-radius: 20px;
+  border: none;
+  background-color: white;
+  color: orange;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: chocolate;
+  color: white;
+}
+
+main {
+  font-family: "Lexend Deca", sans-serif;
+  color: white;
+}
+
+main h1 {
+  text-transform: capitalize;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+main p {
+  font-size: 15px;
+}
+
+main button {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=main.css.map */
