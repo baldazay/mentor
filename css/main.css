@@ -7,11 +7,20 @@
           box-sizing: border-box;
 }
 
+body {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 70px 0 40px 240px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 70px 20px 40px 20px;
 }
 
 .car_type {
@@ -38,11 +47,39 @@ main {
   border-radius: 0 8px 8px 0;
 }
 
-@media (min-width: 370px) and (max-width: 380px) {
+@media (min-width: 601px) and (max-width: 900px) {
   main {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: 80px 45px 80px 45px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 80px 50px 80px 50px;
+  }
+  .car_type {
+    min-height: 400px;
+    max-width: 400px;
+    padding: 40px;
+  }
+  .car_type h1 {
+    margin: 30px 0;
+  }
+  .car_sedan {
+    border-radius: 8px 8px 0 0;
+  }
+  .car_lux {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media (min-width: 370px) and (max-width: 600px) {
+  main {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 80px 15px 80px 15px;
   }
   .car_sedan {
     border-radius: 8px 8px 0 0;
